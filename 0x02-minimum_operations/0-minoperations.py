@@ -4,7 +4,7 @@
 
 def minOperations(n):
     """
-    Gets the fewest number of operations 
+    Gets the fewest number of operation
     to have same number of characters as input
     """
     # Output should be at least two characters
