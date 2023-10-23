@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 Log parsing
 """
 
@@ -14,9 +14,9 @@ if __name__ == '__main__':
     def print_stats(stats: dict, file_size: int) -> None:
         print("File size: {:d}".format(filesize))
         for k, v in sorted(stats.items()):
-            if v: 
+            if v:
                 print("{}: {}".format(k, v))
-        
+
     try:
         for line in sys.stdin:
             count += 1
@@ -35,5 +35,5 @@ if __name__ == '__main__':
                 print_stats(stats, filesize)
         print_stats(stats, filesize)
     except KeyboardInterrupt:
-            print_stats(stats, filesize)
-            raise
+        print_stats(stats, filesize)
+        raise
